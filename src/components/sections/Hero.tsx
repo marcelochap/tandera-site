@@ -85,11 +85,11 @@ export function Hero() {
               aria-hidden
             />
 
-            {/* Bounding box centralizado nos blocos */}
+            {/* Bounding box sobre os blocos saindo da máquina (metade inferior) */}
             <DetectionBox
               label="bloco · OK 98%"
               status="pass"
-              className="left-[8%] top-[18%] h-[60%] w-[72%]"
+              className="left-[14%] top-[54%] h-[28%] w-[66%]"
             />
 
             {/* HUD — cantos de câmera */}
