@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { DetectionBox } from "@/components/ui/DetectionBox";
 
@@ -43,46 +42,67 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Social proof sutil */}
           <p className="mt-8 font-sans text-[var(--text-small)] text-text-dark-muted">
             Instalação sem parar a produção · Alerta no WhatsApp · Sem alterar a máquina
           </p>
         </div>
 
-        {/* Coluna visual */}
+        {/* Coluna visual — vídeo em loop */}
         <div className="glow-halo relative">
           <div
             className="relative overflow-hidden rounded-[var(--radius-xl)]
                         border border-ink-border shadow-[var(--shadow-lg)]"
           >
-            <Image
-              src="/img/saida-blocos-operador.png"
-              alt="Saída de blocos de concreto sendo inspecionados pela câmera da Tandera"
-              width={720}
-              height={560}
-              priority
+            {/* Vídeo da máquina Poyatos em loop */}
+            <video
+              src="/video/poyatos-hero.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="Máquina Poyatos produzindo blocos de concreto — câmera Tandera em operação"
               className="h-auto w-full object-cover"
+              style={{ aspectRatio: "4 / 3" }}
             />
 
-            {/* Overlay escuro sutil nas bordas */}
+            {/* Overlay: escurece as bordas para o bounding box se destacar */}
             <div
-              className="absolute inset-0 rounded-[var(--radius-xl)]"
+              className="absolute inset-0"
               style={{
                 background:
-                  "radial-gradient(ellipse at center, transparent 40%, rgba(35,35,35,0.55) 100%)",
+                  "radial-gradient(ellipse at center, transparent 35%, rgba(26,26,26,0.5) 100%)",
               }}
               aria-hidden
             />
 
-            {/* Bounding box de detecção — bloco aprovado */}
+            {/* Scan line — linha que varre verticalmente em loop */}
+            <div
+              className="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-aqua/60"
+              style={{
+                boxShadow: "0 0 8px 1px rgba(30,255,215,0.5)",
+                animation: "scan-line 3s linear infinite",
+              }}
+              aria-hidden
+            />
+
+            {/* Bounding box centralizado nos blocos */}
             <DetectionBox
               label="bloco · OK 98%"
               status="pass"
-              className="left-[20%] top-[22%] h-[42%] w-[40%]"
+              className="left-[8%] top-[18%] h-[60%] w-[72%]"
             />
 
             {/* HUD — cantos de câmera */}
             <HudCorners />
+
+            {/* Timestamp de câmera (canto superior direito) */}
+            <div
+              className="absolute right-3 top-3 font-sans text-[0.65rem] font-medium
+                          text-aqua/70 tracking-wider tabular-nums"
+              aria-hidden
+            >
+              REC ● {new Date().toLocaleDateString("pt-BR")}
+            </div>
 
             {/* Status badge flutuante */}
             <div
@@ -99,21 +119,28 @@ export function Hero() {
         </div>
 
       </div>
+
+      {/* Keyframe da scan line */}
+      <style>{`
+        @keyframes scan-line {
+          0%   { top: 0%; opacity: 1; }
+          90%  { top: 100%; opacity: 0.6; }
+          100% { top: 0%; opacity: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          [style*="scan-line"] { animation: none; display: none; }
+        }
+      `}</style>
     </section>
   );
 }
 
-/** Cantos de HUD no estilo de visor de câmera */
 function HudCorners() {
   return (
     <div className="pointer-events-none absolute inset-0" aria-hidden>
-      {/* Top-left */}
       <span className="absolute left-3 top-3 h-6 w-6 border-l-2 border-t-2 border-aqua/50 rounded-tl-sm" />
-      {/* Top-right */}
       <span className="absolute right-3 top-3 h-6 w-6 border-r-2 border-t-2 border-aqua/50 rounded-tr-sm" />
-      {/* Bottom-left */}
       <span className="absolute bottom-3 left-3 h-6 w-6 border-b-2 border-l-2 border-aqua/50 rounded-bl-sm" />
-      {/* Bottom-right */}
       <span className="absolute bottom-3 right-3 h-6 w-6 border-b-2 border-r-2 border-aqua/50 rounded-br-sm" />
     </div>
   );
