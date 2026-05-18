@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { DetectionBox } from "@/components/ui/DetectionBox";
+import { ap } from "@/lib/asset-path";
 
 export function Hero() {
   return (
@@ -55,7 +56,7 @@ export function Hero() {
           >
             {/* Vídeo da máquina Poyatos em loop */}
             <video
-              src="/video/poyatos-hero.mp4"
+              src={ap("/video/poyatos-hero.mp4")}
               autoPlay
               muted
               loop

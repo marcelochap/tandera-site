@@ -12,6 +12,8 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit";
+  target?: string;
+  rel?: string;
 }
 
 const base =
@@ -41,12 +43,14 @@ export function Button({
   className,
   onClick,
   type = "button",
+  target,
+  rel,
 }: ButtonProps) {
   const cls = clsx(base, variants[variant], sizes[size], className);
 
   if (href) {
     return (
-      <Link href={href} className={cls}>
+      <Link href={href} target={target} rel={rel} className={cls}>
         {children}
       </Link>
     );

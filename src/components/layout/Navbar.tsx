@@ -38,10 +38,20 @@ export function Navbar() {
           ))}
         </ul>
 
-        {/* Desktop CTA */}
-        <Button href="/#piloto" variant="primary" className="hidden md:inline-flex">
-          Quero reduzir perdas
-        </Button>
+        {/* Desktop CTAs */}
+        <div className="hidden md:flex items-center gap-3">
+          <Button
+            href="https://www.tanderatech.com.br/"
+            variant="ghost"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Área do Cliente
+          </Button>
+          <Button href="/#piloto" variant="primary">
+            Quero reduzir perdas
+          </Button>
+        </div>
 
         {/* Mobile menu (client component) */}
         <MobileMenu />

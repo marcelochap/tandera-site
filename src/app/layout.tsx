@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { museomoderno, jost } from "@/lib/fonts";
+import { museomoderno, jost, centuryGothic } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${museomoderno.variable} ${jost.variable} h-full antialiased`}
+      className={`${museomoderno.variable} ${jost.variable} ${centuryGothic.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
