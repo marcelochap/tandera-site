@@ -78,14 +78,7 @@ export function Hero() {
             <DetectionBox
               label="bloco · OK 98%"
               status="pass"
-              className="left-[15%] top-[20%] h-[40%] w-[35%]"
-            />
-
-            {/* Segundo bounding box — segundo bloco */}
-            <DetectionBox
-              label="bloco · OK 97%"
-              status="pass"
-              className="left-[55%] top-[30%] h-[38%] w-[33%]"
+              className="left-[20%] top-[22%] h-[42%] w-[40%]"
             />
 
             {/* HUD — cantos de câmera */}
