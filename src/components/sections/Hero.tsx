@@ -29,14 +29,13 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-[55ch] font-sans text-[var(--text-body-lg)] text-text-dark-muted leading-relaxed">
-            Câmera instalada na linha + inteligência artificial que valida cada peça em tempo real.
-            Quando a IA identifica uma falha, sua equipe recebe alerta no WhatsApp — antes que o
-            produto ruim saia da fábrica.
+            Câmera na linha + IA que valida cada peça em tempo real. Falha detectada, alerta no
+            WhatsApp — antes de a peça ruim sair da fábrica.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/#piloto" variant="primary" size="lg">
-              Quero reduzir perdas na minha fábrica
+              Quero reduzir perdas
             </Button>
             <Button href="/#como-funciona" variant="secondary" size="lg">
               Ver como funciona

@@ -28,8 +28,7 @@ export function CtaFinal() {
 
           <p className="relative font-sans text-[var(--text-body-lg)] text-text-dark-muted
                          max-w-xl mx-auto leading-relaxed mb-10">
-            Participe do Programa Piloto Tandera e veja como a visão computacional pode ajudar
-            sua equipe a identificar defeitos antes que eles cheguem ao cliente.
+            Participe do Programa Piloto e identifique defeitos antes que cheguem ao cliente.
           </p>
 
           <div className="relative flex flex-wrap items-center justify-center gap-4">
@@ -38,7 +37,7 @@ export function CtaFinal() {
               variant="primary"
               size="lg"
             >
-              Quero reduzir perdas na minha fábrica
+              Quero reduzir perdas
             </Button>
             <Button
               href="https://wa.me/5500000000000?text=Olá,%20quero%20falar%20com%20a%20Tandera"

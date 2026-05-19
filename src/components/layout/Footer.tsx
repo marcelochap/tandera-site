@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const navLinks = [
   { href: "#como-funciona", label: "Como funciona" },
-  { href: "#defeitos",      label: "Defeitos identificados" },
   { href: "#alertas",       label: "Alertas WhatsApp" },
   { href: "#piloto",        label: "Programa Piloto" },
 ];
@@ -25,7 +24,7 @@ export function Footer() {
               />
             </Link>
             <p className="mt-4 font-sans text-[var(--text-small)] text-text-dark-muted leading-relaxed max-w-[28ch]">
-              Câmera e inteligência artificial para controle de qualidade de blocos e bloquetes de concreto.
+              IA e câmera para controle de qualidade de blocos e bloquetes de concreto.
             </p>
           </div>
 

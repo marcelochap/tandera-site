@@ -5,17 +5,17 @@ const passos = [
   {
     icon: Camera,
     titulo: "A câmera capta",
-    desc: "Uma câmera conectada filma cada peça no momento em que ela sai da máquina — sem alterar o fluxo da linha.",
+    desc: "Filma cada peça na saída da máquina, sem alterar o fluxo da linha.",
   },
   {
     icon: Cpu,
     titulo: "A IA valida",
-    desc: "O modelo de visão computacional analisa a imagem e identifica falhas visuais: trinca, bicheira, canto quebrado e mais.",
+    desc: "Analisa cada imagem e detecta trinca, bicheira, canto quebrado e mais.",
   },
   {
     icon: Smartphone,
     titulo: "A equipe é avisada",
-    desc: "Aprovado ou reprovado na hora. O resultado chega no WhatsApp do operador, encarregado e gestor — em segundos.",
+    desc: "Aprovado ou reprovado na hora — operador, encarregado e gestor avisados em segundos.",
   },
 ];
 

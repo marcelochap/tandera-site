@@ -5,17 +5,17 @@ const dores = [
   {
     icon: AlertTriangle,
     title: "A inspeção manual é amostral",
-    text: "O operador não consegue checar cada peça que sai da máquina. Defeitos passam batido — e só aparecem depois.",
+    text: "O operador não checa cada peça. Defeitos passam — e só aparecem depois.",
   },
   {
     icon: Clock,
     title: "O defeito se repete por horas",
-    text: "Sem alerta em tempo real, o problema pode continuar por toda uma produção antes de alguém perceber.",
+    text: "Sem alerta, o problema percorre toda a produção antes de alguém notar.",
   },
   {
     icon: ThumbsDown,
     title: "O cliente encontra antes de você",
-    text: "Reclamação de obra é pior do que refugo interno — gera devolução, retrabalho e perda de reputação.",
+    text: "Reclamação de obra gera devolução, retrabalho e perda de reputação.",
   },
 ];
 

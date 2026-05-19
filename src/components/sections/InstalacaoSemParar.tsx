@@ -20,7 +20,7 @@ const cards = [
   {
     icon: MessageCircle,
     titulo: "Até 5 números de WhatsApp",
-    desc: "Operador, encarregado e gestores recebem alertas diretamente no celular, sem app adicional.",
+    desc: "Alertas direto no celular — sem app adicional.",
   },
 ];
 
@@ -36,8 +36,7 @@ export function InstalacaoSemParar() {
             A câmera acompanha sua linha. A produção continua.
           </h2>
           <p className="font-sans text-[var(--text-body-lg)] text-text-light-muted leading-relaxed">
-            A principal dúvida de quem conhece a Tandera é: <strong className="text-text-light font-medium">"vai parar minha produção?"</strong>.
-            A resposta é não. A instalação é não invasiva e acontece enquanto a fábrica opera.
+            A dúvida mais comum: <strong className="text-text-light font-medium">"vai parar minha produção?"</strong> Não. A instalação acontece com a fábrica operando.
           </p>
         </div>
 

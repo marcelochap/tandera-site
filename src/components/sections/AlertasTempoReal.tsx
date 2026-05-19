@@ -11,7 +11,7 @@ const bullets = [
   {
     icon: Users,
     title: "Até 5 números",
-    text: "Operador, encarregado e gestor recebem o alerta ao mesmo tempo. Sem telefone fixo, sem grito de chão de fábrica.",
+    text: "Operador, encarregado e gestor avisados ao mesmo tempo. Sem telefone fixo, sem grito de chão de fábrica.",
   },
   {
     icon: Clock,
@@ -53,8 +53,7 @@ export function AlertasTempoReal() {
             Quando o defeito aparece, a equipe sabe na hora.
           </h2>
           <p className="font-sans text-[var(--text-body-lg)] text-text-dark-muted leading-relaxed mb-10">
-            A Tandera avisa quem pode resolver. Sem depender de alguém estar olhando para a linha
-            no momento certo.
+            A Tandera avisa quem pode resolver — sem depender de alguém olhando para a linha.
           </p>
 
           <ul className="flex flex-col gap-6">

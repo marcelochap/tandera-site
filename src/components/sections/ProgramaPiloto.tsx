@@ -25,14 +25,12 @@ export function ProgramaPiloto() {
 
           <h2 className="relative font-display font-bold italic leading-tight
                          text-[clamp(1.75rem,3.5vw,2.5rem)] text-text-dark max-w-3xl mx-auto mb-6">
-            Sua fábrica pode estar entre as primeiras a usar IA no controle de qualidade do concreto.
+            Seja uma das primeiras fábricas a usar IA no controle de qualidade do concreto.
           </h2>
 
           <p className="relative font-sans text-[var(--text-body-lg)] text-text-dark-muted
                          max-w-2xl mx-auto leading-relaxed mb-4">
-            A Tandera está selecionando fábricas de blocos e pavers para participar do Programa Piloto
-            com condição especial. A proposta é validar a tecnologia em ambientes reais de produção,
-            acompanhando defeitos, alertas e relatórios junto com a equipe da fábrica.
+            A Tandera está selecionando fábricas para validar a tecnologia em produção real — com condição especial e acompanhamento próximo.
           </p>
 
           <p className="relative font-sans text-[var(--text-small)] text-aqua mb-10">

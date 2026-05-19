@@ -5,7 +5,6 @@ import { MobileMenu } from "./MobileMenu";
 
 const links = [
   { href: "/#como-funciona", label: "Como funciona" },
-  { href: "/#defeitos",      label: "Defeitos identificados" },
   { href: "/#piloto",        label: "Programa Piloto" },
 ];
 
