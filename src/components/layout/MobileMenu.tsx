@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/Button";
 
 const links = [
   { href: "/#como-funciona", label: "Como funciona" },
-  { href: "/#defeitos",      label: "Defeitos identificados" },
   { href: "/#piloto",        label: "Programa Piloto" },
 ];
 
@@ -53,7 +52,7 @@ export function MobileMenu() {
               </Link>
             ))}
             <Button
-              href="/#piloto"
+              href="/api/whatsapp?text=Olá, quero reduzir perdas na minha fábrica com a Tandera"
               variant="primary"
               size="lg"
               className="mt-4"

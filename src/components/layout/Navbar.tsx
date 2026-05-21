@@ -47,7 +47,10 @@ export function Navbar() {
           >
             Área do Cliente
           </Button>
-          <Button href="/#piloto" variant="primary">
+          <Button
+            href="/api/whatsapp?text=Olá, quero reduzir perdas na minha fábrica com a Tandera"
+            variant="primary"
+          >
             Quero reduzir perdas
           </Button>
         </div>

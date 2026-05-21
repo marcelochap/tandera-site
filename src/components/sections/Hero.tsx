@@ -34,7 +34,11 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button href="/#piloto" variant="primary" size="lg">
+            <Button
+              href="/api/whatsapp?text=Olá, quero reduzir perdas na minha fábrica com a Tandera"
+              variant="primary"
+              size="lg"
+            >
               Quero reduzir perdas
             </Button>
             <Button href="/#como-funciona" variant="secondary" size="lg">
