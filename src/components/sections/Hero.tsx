@@ -43,7 +43,7 @@ export function Hero() {
           </div>
 
           <p className="mt-8 font-sans text-[var(--text-small)] text-text-dark-muted">
-            Instalação sem parar a produção · Alerta no WhatsApp · Sem alterar a máquina
+            Instalação sem parar a produção · Alerta no WhatsApp · Acompanhamento em tempo real.
           </p>
         </div>
 
