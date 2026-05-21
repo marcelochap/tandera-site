@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Section } from "@/components/ui/Section";
-import { Zap, Users, Clock } from "lucide-react";
+import { Zap, Users, Clock, CheckCircle2, Wrench, Wifi } from "lucide-react";
 
 const bullets = [
   {
@@ -20,9 +20,29 @@ const bullets = [
   },
 ];
 
+const installCards = [
+  {
+    icon: CheckCircle2,
+    titulo: "Sem parar a produção",
+    desc: "A câmera é posicionada para acompanhar a saída da peça. A linha não para, o ciclo não muda.",
+  },
+  {
+    icon: Wrench,
+    titulo: "Sem alterar a máquina",
+    desc: "Nenhuma modificação na vibroprensa ou na esteira. A instalação é externa ao equipamento.",
+  },
+  {
+    icon: Wifi,
+    titulo: "Acompanhamento remoto",
+    desc: "A equipe Tandera monitora a integração de forma remota durante o período de validação.",
+  },
+];
+
 export function AlertasTempoReal() {
   return (
     <Section tone="dark" id="alertas">
+
+      {/* Linha 1: imagem + texto/bullets */}
       <div className="grid items-center gap-12 lg:grid-cols-2">
 
         {/* Imagem WhatsApp */}
@@ -30,19 +50,11 @@ export function AlertasTempoReal() {
           <div className="relative max-w-xs w-full rounded-[var(--radius-xl)] overflow-hidden border border-ink-border shadow-[var(--shadow-lg)]">
             <Image
               src="/img/whatsapp-alerta-real.png"
-              alt="Alerta de defeito no WhatsApp enviado pela Tandera em tempo real"
+              alt="Alerta de defeito no WhatsApp enviado pela Tandera"
               width={400}
               height={700}
               className="h-auto w-full"
             />
-            {/* Badge "tempo real" */}
-            <div className="absolute top-4 right-4 flex items-center gap-1.5 rounded-[var(--radius-pill)]
-                            bg-aqua/15 border border-aqua/40 px-3 py-1 backdrop-blur-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-aqua animate-pulse" aria-hidden />
-              <span className="font-sans text-[var(--text-caption)] font-medium text-aqua tracking-wide">
-                tempo real
-              </span>
-            </div>
           </div>
         </div>
 
@@ -75,6 +87,31 @@ export function AlertasTempoReal() {
         </div>
 
       </div>
+
+      {/* Divisor */}
+      <div className="mt-16 border-t border-ink-border" />
+
+      {/* Linha 2: 3 cards de instalação */}
+      <div className="mt-12 grid gap-6 sm:grid-cols-3">
+        {installCards.map((c) => (
+          <div
+            key={c.titulo}
+            className="rounded-[var(--radius-lg)] border border-ink-border bg-ink-raised p-6"
+          >
+            <div className="mb-3 flex h-9 w-9 items-center justify-center
+                            rounded-[var(--radius-md)] bg-aqua/10 border border-aqua/25">
+              <c.icon className="h-4 w-4 text-aqua" strokeWidth={1.75} aria-hidden />
+            </div>
+            <h3 className="mb-1 font-display font-bold text-[var(--text-small)] text-text-dark">
+              {c.titulo}
+            </h3>
+            <p className="font-sans text-[var(--text-small)] text-text-dark-muted leading-relaxed">
+              {c.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+
     </Section>
   );
 }

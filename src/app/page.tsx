@@ -4,7 +4,6 @@ import { Hero } from "@/components/sections/Hero";
 import { Problema } from "@/components/sections/Problema";
 import { ComoFunciona } from "@/components/sections/ComoFunciona";
 import { AlertasTempoReal } from "@/components/sections/AlertasTempoReal";
-import { InstalacaoSemParar } from "@/components/sections/InstalacaoSemParar";
 import { ProgramaPiloto } from "@/components/sections/ProgramaPiloto";
 import { CtaFinal } from "@/components/sections/CtaFinal";
 
@@ -17,7 +16,6 @@ export default function Home() {
         <Problema />
         <ComoFunciona />
         <AlertasTempoReal />
-        <InstalacaoSemParar />
         <ProgramaPiloto />
         <CtaFinal />
       </main>
