@@ -33,14 +33,14 @@ export function CtaFinal() {
 
           <div className="relative flex flex-wrap items-center justify-center gap-4">
             <Button
-              href="https://wa.me/5500000000000?text=Olá,%20quero%20reduzir%20perdas%20na%20minha%20fábrica%20com%20a%20Tandera"
+              href="/api/whatsapp?text=Olá, quero reduzir perdas na minha fábrica com a Tandera"
               variant="primary"
               size="lg"
             >
               Quero reduzir perdas
             </Button>
             <Button
-              href="https://wa.me/5500000000000?text=Olá,%20quero%20falar%20com%20a%20Tandera"
+              href="/api/whatsapp?text=Olá, quero falar com a Tandera"
               variant="secondary"
               size="lg"
             >

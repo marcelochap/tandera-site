@@ -56,7 +56,8 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="https://wa.me/5500000000000"
+                  href="/api/whatsapp"
+                  rel="noopener noreferrer"
                   className="font-sans text-[var(--text-small)] text-text-dark-muted transition-colors hover:text-aqua"
                 >
                   WhatsApp

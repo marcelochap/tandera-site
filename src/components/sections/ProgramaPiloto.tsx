@@ -40,7 +40,7 @@ export function ProgramaPiloto() {
           {/* CTA */}
           <div className="relative flex flex-wrap items-center justify-center gap-4">
             <Button
-              href="https://wa.me/5500000000000?text=Olá,%20quero%20participar%20do%20Programa%20Piloto%20Tandera"
+              href="/api/whatsapp?text=Olá, quero participar do Programa Piloto Tandera"
               variant="primary"
               size="lg"
             >
