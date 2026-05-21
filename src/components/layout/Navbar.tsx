@@ -40,7 +40,7 @@ export function Navbar() {
         {/* Desktop CTAs */}
         <div className="hidden md:flex items-center gap-3">
           <Button
-            href="https://www.tanderatech.com.br/"
+            href="https://app.tanderatech.com.br/"
             variant="ghost"
             target="_blank"
             rel="noopener noreferrer"
