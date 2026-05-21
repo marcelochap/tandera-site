@@ -17,7 +17,7 @@ export function Footer() {
           <div>
             <Link href="/" aria-label="Tandera Tech — início">
               <Image
-                src="/logo/tandera-lockup-dark.png"
+                src="/logo/tandera-lockup-dark-transparent.png"
                 alt="Tandera Tech"
                 width={130}
                 height={28}

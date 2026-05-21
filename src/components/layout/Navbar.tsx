@@ -14,7 +14,7 @@ export function Navbar() {
       <nav className="container-tandera flex h-16 items-center justify-between">
         <Link href="/" aria-label="Tandera Tech — página inicial">
           <Image
-            src="/logo/tandera-lockup-dark.png"
+            src="/logo/tandera-lockup-white-transparent.png"
             alt="Tandera Tech"
             width={140}
             height={30}
