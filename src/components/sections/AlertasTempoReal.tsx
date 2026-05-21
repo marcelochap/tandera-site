@@ -48,25 +48,28 @@ export function AlertasTempoReal() {
             A Tandera avisa quem pode resolver — sem depender de alguém olhando para a linha.
           </p>
 
-          <div className="grid gap-4 sm:grid-cols-3">
+          <ul className="flex flex-col gap-3">
             {cards.map((c) => (
-              <div
+              <li
                 key={c.titulo}
-                className="rounded-[var(--radius-lg)] border border-cloud-border bg-white p-5 shadow-[var(--shadow-sm)]"
+                className="flex items-center gap-4 rounded-[var(--radius-lg)]
+                           border border-cloud-border bg-white px-5 py-4 shadow-[var(--shadow-sm)]"
               >
-                <div className="mb-3 flex h-8 w-8 items-center justify-center
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center
                                 rounded-[var(--radius-md)] bg-aqua/10 border border-aqua/25">
                   <c.icon className="h-4 w-4 text-aqua-deep" strokeWidth={1.75} aria-hidden />
                 </div>
-                <h3 className="font-display font-bold text-[var(--text-small)] text-text-light leading-snug">
-                  {c.titulo}
-                </h3>
-                <p className="mt-1 font-sans text-[var(--text-caption)] text-text-light-muted leading-relaxed">
-                  {c.desc}
-                </p>
-              </div>
+                <div>
+                  <p className="font-display font-bold text-[var(--text-small)] text-text-light">
+                    {c.titulo}
+                  </p>
+                  <p className="font-sans text-[var(--text-caption)] text-text-light-muted leading-relaxed">
+                    {c.desc}
+                  </p>
+                </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
       </div>
